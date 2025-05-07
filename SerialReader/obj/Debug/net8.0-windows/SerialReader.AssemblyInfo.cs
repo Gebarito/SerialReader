@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SerialReader")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f569abf70074e4d3bbefb254f435e85e94ca842d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5fab1ee4d47f6eddb52842b087e0db1b958c7ab4")]
 [assembly: System.Reflection.AssemblyProductAttribute("SerialReader")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SerialReader")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
