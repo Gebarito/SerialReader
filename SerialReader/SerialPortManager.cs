@@ -27,6 +27,14 @@ namespace SerialReader
                 _serialPort.WriteLine(telegram);
         }
 
+        public string ReadTelegram()
+        {
+            if (_serialPort.IsOpen)
+                return _serialPort.ReadLine();
+            else
+                throw new InvalidOperationException("Serial port is not open.");
+        }
+
         private void OnDataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             string message = _serialPort.ReadLine();

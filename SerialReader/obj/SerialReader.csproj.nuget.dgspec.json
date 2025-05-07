@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joaop\\source\\repos\\SerialReader\\SerialReader\\SerialReader.csproj": {}
+    "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\SerialReader.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joaop\\source\\repos\\SerialReader\\SerialReader\\SerialReader.csproj": {
+    "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\SerialReader.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joaop\\source\\repos\\SerialReader\\SerialReader\\SerialReader.csproj",
+        "projectUniqueName": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\SerialReader.csproj",
         "projectName": "SerialReader",
-        "projectPath": "C:\\Users\\joaop\\source\\repos\\SerialReader\\SerialReader\\SerialReader.csproj",
-        "packagesPath": "C:\\Users\\joaop\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joaop\\source\\repos\\SerialReader\\SerialReader\\obj\\",
+        "projectPath": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\SerialReader.csproj",
+        "packagesPath": "C:\\Users\\z00525su\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\joaop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\z00525su\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

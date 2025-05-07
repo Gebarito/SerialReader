@@ -54,7 +54,7 @@ namespace SerialReader
             {
                 _currentTelegram = _telegramHandler.GetNextTelegram();
                 _portManager.SendTelegram(_currentTelegram.Command);
-                Log($"ENVIADO: {_currentTelegram.Command}");
+                Log($"Enviado: {_currentTelegram.Command}");
             }
         }
 
@@ -72,7 +72,6 @@ namespace SerialReader
                     _currentTelegram = null;
                     SendNextTelegram();
                 }
-
             });
         }
 
@@ -94,6 +93,7 @@ namespace SerialReader
         private void sairToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             SaveFile();
+            _portManager.Close();
             Environment.Exit(0);
         }
 
@@ -123,13 +123,35 @@ namespace SerialReader
 
         }
 
-
         private void btnSendOneTelegram_Click(object sender, EventArgs e)
         {
-            // Envia apenas um telegrama
-            //txtTelegramReq.Text;
-            //txtTelegramResExc.Text;
-            Log($"Enviado:{txtTelegramReq.Text}");
+            Telegram _telegram = new();
+
+            _telegram.Command = txtTelegramReq.Text ;
+            _telegram.ExpectedResponse = txtTelegramResExc.Text;
+
+            SerialPortManager _spManager = new SerialPortManager(
+                    cmbPortName.Text,
+                    Convert.ToInt32(txtBaudRate.Text)
+            );
+
+            try
+            {
+                _spManager.Open();
+                _spManager.SendTelegram(_telegram.Command);
+                Log($"Enviado: {_telegram.Command}");
+
+                string response = _spManager.ReadTelegram();
+                string validateResponse = _telegram.ValidateResponse(response) ? "OK" : "Não correspondente";
+
+                Log($"Recebido: {response}: {validateResponse}");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao iniciar comunicação: {ex.Message}");
+            }
+
         }
 
         private void txtTelegramReq_TextChanged(object sender, EventArgs e)
