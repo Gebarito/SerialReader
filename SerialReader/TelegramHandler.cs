@@ -23,7 +23,7 @@ namespace SerialReader
                 }
             }
         }
-    
+   
         public Telegram? GetNextTelegram()
         {
             return _telegramQueue.Count > 0 ? _telegramQueue.Dequeue() : null;
