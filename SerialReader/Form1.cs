@@ -53,8 +53,11 @@ namespace SerialReader
             if (_telegramHandler.HasTelegram)
             {
                 _currentTelegram = _telegramHandler.GetNextTelegram();
-                _portManager.SendTelegram(_currentTelegram.Command);
-                Log($"Enviado: {_currentTelegram.Command}");
+                if (_currentTelegram != null)
+                {
+                    _portManager.SendTelegram(_currentTelegram.Command);
+                    Log($"Enviado: {_currentTelegram.Command}");
+                }
             }
         }
 
