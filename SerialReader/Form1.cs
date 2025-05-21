@@ -12,6 +12,8 @@ namespace SerialReader
         {
             InitializeComponent();
 
+            cmbParity.DataSource = Parity.GetNames(typeof(Parity));
+
             cmbPortName.DataSource = SerialPort.GetPortNames();
             if (cmbPortName.Items.Count < 1)
             {
@@ -22,7 +24,11 @@ namespace SerialReader
         private void btnOpenPort_Click(object sender, EventArgs e)
         {
             if (_portManager == null)
-                _portManager = new SerialPortManager(cmbPortName.Text, Convert.ToInt32(txtBaudRate.Text));
+                _portManager = new SerialPortManager(
+                    cmbPortName.Text,
+                    Convert.ToInt32(txtBaudRate.Text), 
+                    Enum.TryParse<Parity>(cmbParity.Text, out Parity parity) ? parity : Parity.None
+                 );
 
             try
             {
@@ -32,9 +38,13 @@ namespace SerialReader
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Erro ao iniciar comunicação: {ex.Message}");
+                MessageBox.Show(
+                    $"Erro ao iniciar comunicação: {ex.Message}", 
+                    "Erro ao abrir porta de comunicação", 
+                    MessageBoxButtons.OK, 
+                    MessageBoxIcon.Error
+                );
             }
-
         }
 
         private void carregarToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -94,10 +104,14 @@ namespace SerialReader
         }
 
         private void sairToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            SaveFile();
-            _portManager.Close();
-            Environment.Exit(0);
+        {   
+            var msg = MessageBox.Show("Deseja salvar antes de sair?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.OK;
+            if (msg)
+                SaveFile();
+            if (_portManager != null)
+                _portManager.Close();
+
+            Environment.Exit(0);            
         }
 
         private void SaveFile()
@@ -107,6 +121,9 @@ namespace SerialReader
             sfd.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
             sfd.Title = "Salvar Arquivo";
 
+            /*
+             * Defines the name of the file "log_date:hour:minute:second.txt"
+             */
             string format = "ddmmyyyy:hhmmsstt";
             string _filename = "log_" + String.Format("{0}.txt", DateTime.Now.ToString(format));
             sfd.FileName = _filename;
@@ -120,22 +137,27 @@ namespace SerialReader
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Erro ao salvar arquivo: " + ex.Message);
+                    MessageBox.Show(
+                        "Erro ao salvar arquivo: " + ex.Message,
+                        "Erro salvando arquivo de texto",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error
+                    );
                 }
             }
-
         }
 
         private void btnSendOneTelegram_Click(object sender, EventArgs e)
         {
             Telegram _telegram = new();
 
-            _telegram.Command = txtTelegramReq.Text ;
+            _telegram.Command = txtTelegramReq.Text;
             _telegram.ExpectedResponse = txtTelegramResExc.Text;
 
             SerialPortManager _spManager = new SerialPortManager(
                     cmbPortName.Text,
-                    Convert.ToInt32(txtBaudRate.Text)
+                    Convert.ToInt32(txtBaudRate.Text),
+                    Enum.TryParse<Parity>(cmbParity.Text, out Parity parity) ? parity : Parity.None
             );
 
             try
@@ -152,25 +174,30 @@ namespace SerialReader
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Erro ao iniciar comunicação: {ex.Message}");
+                MessageBox.Show(
+                    $"Erro ao iniciar comunicação: {ex.Message}",
+                    "Erro abrindo porta de comunicação",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
             }
 
         }
 
-        private void txtTelegramReq_TextChanged(object sender, EventArgs e)
-        {
-            this.txtTelegramReq.TextChanged += new System.EventHandler(this.TextBoxes_TextChanged);
-        }
+        private void txtTelegramReq_TextChanged(object sender, EventArgs e) => this.txtTelegramReq.TextChanged += new System.EventHandler(this.TextBoxes_TextChanged);
+        private void txtTelegramResExc_TextChanged(object sender, EventArgs e) => this.txtTelegramResExc.TextChanged += new System.EventHandler(this.TextBoxes_TextChanged);
+        private void TextBoxes_TextChanged(object sender, EventArgs e) => btnSendOneTelegram.Enabled = txtTelegramReq.TextLength > 0 && txtTelegramResExc.TextLength > 0;
+        private void ajudaToolStripMenuItem_Click(object sender, EventArgs e) => showHelp();
 
-        private void txtTelegramResExc_TextChanged(object sender, EventArgs e)
+        private void showHelp()
         {
-            this.txtTelegramResExc.TextChanged += new System.EventHandler(this.TextBoxes_TextChanged);
-        }
-
-        private void TextBoxes_TextChanged(object sender, EventArgs e)
-        {
-            btnSendOneTelegram.Enabled = txtTelegramReq.TextLength > 0 &&
-                txtTelegramResExc.TextLength > 0;
+            string helpMessage = "Serial Reader\n\n" +
+            "1. Conecte a porta com desejada.\n" +
+            "2. Carregue um arquivo CSV com os telegramas a serem enviados e as respostas esperadas\n" +
+            "3. Você pode enviar um telegrama único usando os campos de texto abaixo do log\n" +
+            "4. Monitore o log dos telegramas recebidos e enviados\n" +
+            "5. Salve o log se desejar.\n";
+            MessageBox.Show(helpMessage, "Help", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
     }

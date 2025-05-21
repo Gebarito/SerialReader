@@ -12,9 +12,9 @@ namespace SerialReader
         private SerialPort _serialPort;
         public event EventHandler<string> TelegramReceived;
 
-        public SerialPortManager(string portName, int baudRate)
+        public SerialPortManager(string portName, int baudRate, Parity parity)
         {
-            _serialPort = new SerialPort(portName, baudRate);
+            _serialPort = new SerialPort(portName, baudRate, parity);
             _serialPort.DataReceived += OnDataReceived;
         }
 
@@ -23,16 +23,20 @@ namespace SerialReader
 
         public void SendTelegram(string telegram)
         {
-            if (_serialPort.IsOpen)
-                _serialPort.WriteLine(telegram);
+            if (!_serialPort.IsOpen)
+                throw new InvalidOperationException("Serial port is not open.");
+            if (telegram == "")
+                throw new ArgumentException("Telegram cannot be empty.");
+
+            _serialPort.WriteLine(telegram);
         }
 
         public string ReadTelegram()
         {
-            if (_serialPort.IsOpen)
-                return _serialPort.ReadLine();
-            else
+            if (!_serialPort.IsOpen)
                 throw new InvalidOperationException("Serial port is not open.");
+
+            return _serialPort.ReadLine();
         }
 
         private void OnDataReceived(object sender, SerialDataReceivedEventArgs e)
@@ -40,6 +44,5 @@ namespace SerialReader
             string message = _serialPort.ReadLine();
             TelegramReceived?.Invoke(this, message);
         }
-    
     }
 }

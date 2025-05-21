@@ -1,26 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\joaop\\source\\repos\\SerialReader\\",
+  "WorkspaceRootPath": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|c:\\users\\joaop\\source\\repos\\serialreader\\serialreader\\telegramhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|solutionrelative:serialreader\\telegramhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|c:\\users\\z00525su\\source\\repos\\gebarito\\serialreader\\serialreader\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|solutionrelative:serialreader\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|c:\\users\\joaop\\source\\repos\\serialreader\\serialreader\\telegram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\serialreader\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|solutionrelative:serialreader\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|c:\\users\\z00525su\\source\\repos\\gebarito\\serialreader\\serialreader\\telegram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|solutionrelative:serialreader\\telegram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|c:\\users\\joaop\\source\\repos\\serialreader\\serialreader\\serialportmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|solutionrelative:serialreader\\serialportmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|c:\\users\\joaop\\source\\repos\\serialreader\\serialreader\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|c:\\users\\z00525su\\source\\repos\\gebarito\\serialreader\\serialreader\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|solutionrelative:serialreader\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|c:\\users\\joaop\\source\\repos\\serialreader\\serialreader\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|solutionrelative:serialreader\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|c:\\users\\z00525su\\source\\repos\\gebarito\\serialreader\\serialreader\\serialportmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|solutionrelative:serialreader\\serialportmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|c:\\users\\z00525su\\source\\repos\\gebarito\\serialreader\\serialreader\\telegramhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|solutionrelative:serialreader\\telegramhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,68 +34,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\Form1.cs",
+              "RelativeDocumentMoniker": "SerialReader\\Form1.cs",
+              "ToolTip": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\Form1.cs",
+              "RelativeToolTip": "SerialReader\\Form1.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAuwG4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T23:24:04.151Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\Form1.cs",
+              "RelativeDocumentMoniker": "SerialReader\\Form1.cs",
+              "ToolTip": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\Form1.cs [Design]",
+              "RelativeToolTip": "SerialReader\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T17:26:41.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Telegram.cs",
+              "DocumentMoniker": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\Telegram.cs",
+              "RelativeDocumentMoniker": "SerialReader\\Telegram.cs",
+              "ToolTip": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\Telegram.cs",
+              "RelativeToolTip": "SerialReader\\Telegram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T16:47:40.141Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\SerialReader\\SerialReader\\Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "SerialReader\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\joaop\\source\\repos\\SerialReader\\SerialReader\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\Form1.Designer.cs",
               "RelativeToolTip": "SerialReader\\Form1.Designer.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAowJgAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAANcAAAAAAAAAAAAAAOkAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T23:25:48.808Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\SerialReader\\SerialReader\\Form1.cs",
-              "RelativeDocumentMoniker": "SerialReader\\Form1.cs",
-              "ToolTip": "C:\\Users\\joaop\\source\\repos\\SerialReader\\SerialReader\\Form1.cs",
-              "RelativeToolTip": "SerialReader\\Form1.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAiwF8AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T23:24:04.151Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Telegram.cs",
-              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\SerialReader\\SerialReader\\Telegram.cs",
-              "RelativeDocumentMoniker": "SerialReader\\Telegram.cs",
-              "ToolTip": "C:\\Users\\joaop\\source\\repos\\SerialReader\\SerialReader\\Telegram.cs",
-              "RelativeToolTip": "SerialReader\\Telegram.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T16:47:40.141Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "SerialPortManager.cs",
-              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\SerialReader\\SerialReader\\SerialPortManager.cs",
+              "DocumentMoniker": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\SerialPortManager.cs",
               "RelativeDocumentMoniker": "SerialReader\\SerialPortManager.cs",
-              "ToolTip": "C:\\Users\\joaop\\source\\repos\\SerialReader\\SerialReader\\SerialPortManager.cs",
+              "ToolTip": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\SerialPortManager.cs",
               "RelativeToolTip": "SerialReader\\SerialPortManager.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA2wBwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T16:47:02.665Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "TelegramHandler.cs",
-              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\SerialReader\\SerialReader\\TelegramHandler.cs",
+              "DocumentMoniker": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\TelegramHandler.cs",
               "RelativeDocumentMoniker": "SerialReader\\TelegramHandler.cs",
-              "ToolTip": "C:\\Users\\joaop\\source\\repos\\SerialReader\\SerialReader\\TelegramHandler.cs",
+              "ToolTip": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\TelegramHandler.cs",
               "RelativeToolTip": "SerialReader\\TelegramHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T16:47:53.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T16:47:53.216Z"
             }
           ]
         }

@@ -10,6 +10,10 @@ namespace SerialReader
     {
         private Queue<Telegram> _telegramQueue = new();
 
+        /*
+         * Loads telegrams from a CSV file.
+         * Each line should contain a command and an expected response, separated by a comma.
+         */
         public void LoadFromCsv(string filepath)
         {
             var lines = File.ReadAllLines(filepath);
@@ -30,6 +34,7 @@ namespace SerialReader
         }
 
         public bool HasTelegram => _telegramQueue.Count > 0;
+
     }
 
 }

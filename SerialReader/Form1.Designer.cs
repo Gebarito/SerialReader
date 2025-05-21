@@ -35,6 +35,7 @@
             carregarToolStripMenuItem1 = new ToolStripMenuItem();
             limparToolStripMenuItem1 = new ToolStripMenuItem();
             sairToolStripMenuItem1 = new ToolStripMenuItem();
+            ajudaToolStripMenuItem = new ToolStripMenuItem();
             txtTelegramReq = new TextBox();
             txtTelegramResExc = new TextBox();
             lblTelegram = new Label();
@@ -45,24 +46,29 @@
             lblPortName = new Label();
             lblBaudRate = new Label();
             btnSendOneTelegram = new Button();
+            lblParity = new Label();
+            cmbParity = new ComboBox();
             MSForm1.SuspendLayout();
             SuspendLayout();
             // 
             // txtLog
             // 
-            txtLog.Location = new Point(12, 29);
+            txtLog.Location = new Point(17, 48);
+            txtLog.Margin = new Padding(4, 5, 4, 5);
             txtLog.Multiline = true;
             txtLog.Name = "txtLog";
             txtLog.ReadOnly = true;
-            txtLog.Size = new Size(668, 351);
+            txtLog.Size = new Size(953, 582);
             txtLog.TabIndex = 0;
             // 
             // MSForm1
             // 
-            MSForm1.Items.AddRange(new ToolStripItem[] { arquivoToolStripMenuItem });
+            MSForm1.ImageScalingSize = new Size(24, 24);
+            MSForm1.Items.AddRange(new ToolStripItem[] { arquivoToolStripMenuItem, ajudaToolStripMenuItem });
             MSForm1.Location = new Point(0, 0);
             MSForm1.Name = "MSForm1";
-            MSForm1.Size = new Size(800, 24);
+            MSForm1.Padding = new Padding(9, 3, 0, 3);
+            MSForm1.Size = new Size(1143, 35);
             MSForm1.TabIndex = 1;
             MSForm1.Text = "menuStrip1";
             // 
@@ -70,76 +76,88 @@
             // 
             arquivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { salvarToolStripMenuItem1, carregarToolStripMenuItem1, limparToolStripMenuItem1, sairToolStripMenuItem1 });
             arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
-            arquivoToolStripMenuItem.Size = new Size(61, 20);
+            arquivoToolStripMenuItem.Size = new Size(91, 29);
             arquivoToolStripMenuItem.Text = "Arquivo";
             // 
             // salvarToolStripMenuItem1
             // 
             salvarToolStripMenuItem1.Name = "salvarToolStripMenuItem1";
-            salvarToolStripMenuItem1.Size = new Size(119, 22);
+            salvarToolStripMenuItem1.Size = new Size(181, 34);
             salvarToolStripMenuItem1.Text = "Salvar";
             salvarToolStripMenuItem1.Click += salvarToolStripMenuItem1_Click;
             // 
             // carregarToolStripMenuItem1
             // 
             carregarToolStripMenuItem1.Name = "carregarToolStripMenuItem1";
-            carregarToolStripMenuItem1.Size = new Size(119, 22);
+            carregarToolStripMenuItem1.Size = new Size(181, 34);
             carregarToolStripMenuItem1.Text = "Carregar";
             carregarToolStripMenuItem1.Click += carregarToolStripMenuItem1_Click;
             // 
             // limparToolStripMenuItem1
             // 
             limparToolStripMenuItem1.Name = "limparToolStripMenuItem1";
-            limparToolStripMenuItem1.Size = new Size(119, 22);
+            limparToolStripMenuItem1.Size = new Size(181, 34);
             limparToolStripMenuItem1.Text = "Limpar";
             limparToolStripMenuItem1.Click += limparToolStripMenuItem1_Click;
             // 
             // sairToolStripMenuItem1
             // 
             sairToolStripMenuItem1.Name = "sairToolStripMenuItem1";
-            sairToolStripMenuItem1.Size = new Size(119, 22);
+            sairToolStripMenuItem1.Size = new Size(181, 34);
             sairToolStripMenuItem1.Text = "Sair";
             sairToolStripMenuItem1.Click += sairToolStripMenuItem1_Click;
             // 
+            // ajudaToolStripMenuItem
+            // 
+            ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
+            ajudaToolStripMenuItem.Size = new Size(74, 29);
+            ajudaToolStripMenuItem.Text = "Ajuda";
+            ajudaToolStripMenuItem.Click += ajudaToolStripMenuItem_Click;
+            // 
             // txtTelegramReq
             // 
-            txtTelegramReq.Location = new Point(97, 386);
+            txtTelegramReq.Location = new Point(139, 643);
+            txtTelegramReq.Margin = new Padding(4, 5, 4, 5);
             txtTelegramReq.Name = "txtTelegramReq";
-            txtTelegramReq.Size = new Size(583, 23);
+            txtTelegramReq.Size = new Size(831, 31);
             txtTelegramReq.TabIndex = 2;
             txtTelegramReq.TextChanged += txtTelegramReq_TextChanged;
             // 
             // txtTelegramResExc
             // 
-            txtTelegramResExc.Location = new Point(97, 415);
+            txtTelegramResExc.Location = new Point(139, 692);
+            txtTelegramResExc.Margin = new Padding(4, 5, 4, 5);
             txtTelegramResExc.Name = "txtTelegramResExc";
-            txtTelegramResExc.Size = new Size(583, 23);
+            txtTelegramResExc.Size = new Size(831, 31);
             txtTelegramResExc.TabIndex = 3;
             txtTelegramResExc.TextChanged += txtTelegramResExc_TextChanged;
             // 
             // lblTelegram
             // 
             lblTelegram.AutoSize = true;
-            lblTelegram.Location = new Point(12, 389);
+            lblTelegram.Location = new Point(17, 648);
+            lblTelegram.Margin = new Padding(4, 0, 4, 0);
             lblTelegram.Name = "lblTelegram";
-            lblTelegram.Size = new Size(64, 15);
+            lblTelegram.Size = new Size(96, 25);
             lblTelegram.TabIndex = 4;
             lblTelegram.Text = "Telegrama:";
             // 
             // lblResExpected
             // 
             lblResExpected.AutoSize = true;
-            lblResExpected.Location = new Point(12, 418);
+            lblResExpected.Location = new Point(17, 697);
+            lblResExpected.Margin = new Padding(4, 0, 4, 0);
             lblResExpected.Name = "lblResExpected";
-            lblResExpected.Size = new Size(79, 15);
+            lblResExpected.Size = new Size(121, 25);
             lblResExpected.TabIndex = 5;
             lblResExpected.Text = "Resposta Exp:";
             // 
             // btnOpenPort
             // 
-            btnOpenPort.Location = new Point(686, 328);
+            btnOpenPort.Location = new Point(980, 547);
+            btnOpenPort.Margin = new Padding(4, 5, 4, 5);
             btnOpenPort.Name = "btnOpenPort";
-            btnOpenPort.Size = new Size(102, 52);
+            btnOpenPort.Size = new Size(146, 87);
             btnOpenPort.TabIndex = 6;
             btnOpenPort.Text = "Iniciar";
             btnOpenPort.UseVisualStyleBackColor = true;
@@ -147,54 +165,80 @@
             // 
             // txtBaudRate
             // 
-            txtBaudRate.Location = new Point(684, 154);
+            txtBaudRate.Location = new Point(977, 257);
+            txtBaudRate.Margin = new Padding(4, 5, 4, 5);
             txtBaudRate.Name = "txtBaudRate";
-            txtBaudRate.Size = new Size(102, 23);
+            txtBaudRate.Size = new Size(144, 31);
             txtBaudRate.TabIndex = 7;
             txtBaudRate.Text = "9600";
             // 
             // cmbPortName
             // 
             cmbPortName.FormattingEnabled = true;
-            cmbPortName.Location = new Point(684, 110);
+            cmbPortName.Location = new Point(977, 183);
+            cmbPortName.Margin = new Padding(4, 5, 4, 5);
             cmbPortName.Name = "cmbPortName";
-            cmbPortName.Size = new Size(104, 23);
+            cmbPortName.Size = new Size(147, 33);
             cmbPortName.TabIndex = 8;
             // 
             // lblPortName
             // 
             lblPortName.AutoSize = true;
-            lblPortName.Location = new Point(684, 92);
+            lblPortName.Location = new Point(977, 153);
+            lblPortName.Margin = new Padding(4, 0, 4, 0);
             lblPortName.Name = "lblPortName";
-            lblPortName.Size = new Size(90, 15);
+            lblPortName.Size = new Size(136, 25);
             lblPortName.TabIndex = 9;
             lblPortName.Text = "Nome da Porta:";
             // 
             // lblBaudRate
             // 
             lblBaudRate.AutoSize = true;
-            lblBaudRate.Location = new Point(684, 136);
+            lblBaudRate.Location = new Point(977, 227);
+            lblBaudRate.Margin = new Padding(4, 0, 4, 0);
             lblBaudRate.Name = "lblBaudRate";
-            lblBaudRate.Size = new Size(60, 15);
+            lblBaudRate.Size = new Size(91, 25);
             lblBaudRate.TabIndex = 10;
             lblBaudRate.Text = "Baud rate:";
             // 
             // btnSendOneTelegram
             // 
             btnSendOneTelegram.Enabled = false;
-            btnSendOneTelegram.Location = new Point(686, 415);
+            btnSendOneTelegram.Location = new Point(980, 692);
+            btnSendOneTelegram.Margin = new Padding(4, 5, 4, 5);
             btnSendOneTelegram.Name = "btnSendOneTelegram";
-            btnSendOneTelegram.Size = new Size(102, 23);
+            btnSendOneTelegram.Size = new Size(146, 38);
             btnSendOneTelegram.TabIndex = 11;
             btnSendOneTelegram.Text = "Enviar";
             btnSendOneTelegram.UseVisualStyleBackColor = true;
             btnSendOneTelegram.Click += btnSendOneTelegram_Click;
             // 
+            // lblParity
+            // 
+            lblParity.AutoSize = true;
+            lblParity.Location = new Point(977, 302);
+            lblParity.Margin = new Padding(4, 0, 4, 0);
+            lblParity.Name = "lblParity";
+            lblParity.Size = new Size(80, 25);
+            lblParity.TabIndex = 13;
+            lblParity.Text = "Paridade";
+            // 
+            // cmbParity
+            // 
+            cmbParity.FormattingEnabled = true;
+            cmbParity.Location = new Point(977, 332);
+            cmbParity.Margin = new Padding(4, 5, 4, 5);
+            cmbParity.Name = "cmbParity";
+            cmbParity.Size = new Size(147, 33);
+            cmbParity.TabIndex = 14;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1143, 750);
+            Controls.Add(cmbParity);
+            Controls.Add(lblParity);
             Controls.Add(btnSendOneTelegram);
             Controls.Add(lblBaudRate);
             Controls.Add(lblPortName);
@@ -208,6 +252,7 @@
             Controls.Add(MSForm1);
             Controls.Add(txtLog);
             MainMenuStrip = MSForm1;
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Form1";
             Text = "Form1";
             MSForm1.ResumeLayout(false);
@@ -235,5 +280,8 @@
         private Label lblPortName;
         private Label lblBaudRate;
         private Button btnSendOneTelegram;
+        private ToolStripMenuItem ajudaToolStripMenuItem;
+        private Label lblParity;
+        private ComboBox cmbParity;
     }
 }
