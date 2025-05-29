@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|c:\\users\\z00525su\\source\\repos\\gebarito\\serialreader\\serialreader\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|solutionrelative:serialreader\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\serialreader\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|solutionrelative:serialreader\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|c:\\users\\z00525su\\source\\repos\\gebarito\\serialreader\\serialreader\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|solutionrelative:serialreader\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D36FDB8-A607-4DCE-96F6-62132F800EFC}|SerialReader\\SerialReader.csproj|c:\\users\\z00525su\\source\\repos\\gebarito\\serialreader\\serialreader\\telegram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\Form1.cs",
               "RelativeDocumentMoniker": "SerialReader\\Form1.cs",
               "ToolTip": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\Form1.cs",
               "RelativeToolTip": "SerialReader\\Form1.cs",
-              "ViewState": "AgIAAJ4AAAAAAAAAAAAQwJwAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAALYAAAAAAAAAAAAmwNEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T23:24:04.151Z",
               "IsPinned": true,
@@ -52,7 +52,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\Form1.cs",
               "RelativeDocumentMoniker": "SerialReader\\Form1.cs",

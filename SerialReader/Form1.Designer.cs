@@ -49,7 +49,10 @@
             lblParity = new Label();
             cmbParity = new ComboBox();
             btnRefresh = new Button();
+            statusStrip = new StatusStrip();
+            toolStripStatusLabel1 = new ToolStripStatusLabel();
             MSForm1.SuspendLayout();
+            statusStrip.SuspendLayout();
             SuspendLayout();
             // 
             // txtLog
@@ -69,7 +72,7 @@
             MSForm1.Location = new Point(0, 0);
             MSForm1.Name = "MSForm1";
             MSForm1.Padding = new Padding(9, 3, 0, 3);
-            MSForm1.Size = new Size(1143, 35);
+            MSForm1.Size = new Size(1156, 35);
             MSForm1.TabIndex = 1;
             MSForm1.Text = "menuStrip1";
             // 
@@ -155,7 +158,7 @@
             // 
             // btnOpenPort
             // 
-            btnOpenPort.Location = new Point(980, 547);
+            btnOpenPort.Location = new Point(980, 543);
             btnOpenPort.Margin = new Padding(4, 5, 4, 5);
             btnOpenPort.Name = "btnOpenPort";
             btnOpenPort.Size = new Size(146, 87);
@@ -205,7 +208,7 @@
             // btnSendOneTelegram
             // 
             btnSendOneTelegram.Enabled = false;
-            btnSendOneTelegram.Location = new Point(980, 692);
+            btnSendOneTelegram.Location = new Point(980, 688);
             btnSendOneTelegram.Margin = new Padding(4, 5, 4, 5);
             btnSendOneTelegram.Name = "btnSendOneTelegram";
             btnSendOneTelegram.Size = new Size(146, 38);
@@ -243,11 +246,28 @@
             btnRefresh.UseVisualStyleBackColor = true;
             btnRefresh.Click += btnRefresh_Click;
             // 
+            // statusStrip
+            // 
+            statusStrip.ImageScalingSize = new Size(24, 24);
+            statusStrip.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
+            statusStrip.Location = new Point(0, 736);
+            statusStrip.Name = "statusStrip";
+            statusStrip.Size = new Size(1156, 32);
+            statusStrip.TabIndex = 16;
+            statusStrip.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            toolStripStatusLabel1.Size = new Size(121, 25);
+            toolStripStatusLabel1.Text = "tsslCOM3Info";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1143, 750);
+            ClientSize = new Size(1156, 768);
+            Controls.Add(statusStrip);
             Controls.Add(btnRefresh);
             Controls.Add(cmbParity);
             Controls.Add(lblParity);
@@ -269,6 +289,8 @@
             Text = "Form1";
             MSForm1.ResumeLayout(false);
             MSForm1.PerformLayout();
+            statusStrip.ResumeLayout(false);
+            statusStrip.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -296,5 +318,7 @@
         private Label lblParity;
         private ComboBox cmbParity;
         private Button btnRefresh;
+        private StatusStrip statusStrip;
+        private ToolStripStatusLabel toolStripStatusLabel1;
     }
 }

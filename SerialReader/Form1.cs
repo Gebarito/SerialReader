@@ -11,9 +11,7 @@ namespace SerialReader
         public Form1()
         {
             InitializeComponent();
-
             cmbParity.DataSource = Parity.GetNames(typeof(Parity));
-
             loadCOMPorts();
         }
 
@@ -180,12 +178,6 @@ namespace SerialReader
 
         }
 
-        private void txtTelegramReq_TextChanged(object sender, EventArgs e) => this.txtTelegramReq.TextChanged += new System.EventHandler(this.TextBoxes_TextChanged);
-        private void txtTelegramResExc_TextChanged(object sender, EventArgs e) => this.txtTelegramResExc.TextChanged += new System.EventHandler(this.TextBoxes_TextChanged);
-        private void TextBoxes_TextChanged(object sender, EventArgs e) => btnSendOneTelegram.Enabled = txtTelegramReq.TextLength > 0 && txtTelegramResExc.TextLength > 0;
-        private void ajudaToolStripMenuItem_Click(object sender, EventArgs e) => showHelp();
-        private void btnRefresh_Click(object sender, EventArgs e) => loadCOMPorts();
-
         private void showHelp()
         {
             string helpMessage = "Serial Reader\n\n" +
@@ -200,11 +192,20 @@ namespace SerialReader
         private void loadCOMPorts()
         {
             cmbPortName.DataSource = SerialPort.GetPortNames();
-            if (cmbPortName.Items.Count < 1)
-            {
+            if (cmbPortName.Items.Count < 1) {
                 cmbPortName.Text = "COM3";
+                toolStripStatusLabel1.Text = "Nenhuma porta COM encontrada. Verifique as conexões.";
             }
+            else { toolStripStatusLabel1.Text = ""; }
+
         }
+
+        private void txtTelegramReq_TextChanged(object sender, EventArgs e) => this.txtTelegramReq.TextChanged += new System.EventHandler(this.TextBoxes_TextChanged);
+        private void txtTelegramResExc_TextChanged(object sender, EventArgs e) => this.txtTelegramResExc.TextChanged += new System.EventHandler(this.TextBoxes_TextChanged);
+        private void TextBoxes_TextChanged(object sender, EventArgs e) => btnSendOneTelegram.Enabled = txtTelegramReq.TextLength > 0 && txtTelegramResExc.TextLength > 0;
+        private void ajudaToolStripMenuItem_Click(object sender, EventArgs e) => showHelp();
+        private void btnRefresh_Click(object sender, EventArgs e) => loadCOMPorts();
+
     }
 
 }
