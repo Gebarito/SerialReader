@@ -14,11 +14,7 @@ namespace SerialReader
 
             cmbParity.DataSource = Parity.GetNames(typeof(Parity));
 
-            cmbPortName.DataSource = SerialPort.GetPortNames();
-            if (cmbPortName.Items.Count < 1)
-            {
-                cmbPortName.Text = "COM3";
-            }
+            loadCOMPorts();
         }
 
         private void btnOpenPort_Click(object sender, EventArgs e)
@@ -26,7 +22,7 @@ namespace SerialReader
             if (_portManager == null)
                 _portManager = new SerialPortManager(
                     cmbPortName.Text,
-                    Convert.ToInt32(txtBaudRate.Text), 
+                    Convert.ToInt32(txtBaudRate.Text),
                     Enum.TryParse<Parity>(cmbParity.Text, out Parity parity) ? parity : Parity.None
                  );
 
@@ -39,9 +35,9 @@ namespace SerialReader
             catch (Exception ex)
             {
                 MessageBox.Show(
-                    $"Erro ao iniciar comunicação: {ex.Message}", 
-                    "Erro ao abrir porta de comunicação", 
-                    MessageBoxButtons.OK, 
+                    $"Erro ao iniciar comunicação: {ex.Message}",
+                    "Erro ao abrir porta de comunicação",
+                    MessageBoxButtons.OK,
                     MessageBoxIcon.Error
                 );
             }
@@ -104,14 +100,14 @@ namespace SerialReader
         }
 
         private void sairToolStripMenuItem1_Click(object sender, EventArgs e)
-        {   
+        {
             var msg = MessageBox.Show("Deseja salvar antes de sair?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.OK;
             if (msg)
                 SaveFile();
             if (_portManager != null)
                 _portManager.Close();
 
-            Environment.Exit(0);            
+            Environment.Exit(0);
         }
 
         private void SaveFile()
@@ -188,6 +184,7 @@ namespace SerialReader
         private void txtTelegramResExc_TextChanged(object sender, EventArgs e) => this.txtTelegramResExc.TextChanged += new System.EventHandler(this.TextBoxes_TextChanged);
         private void TextBoxes_TextChanged(object sender, EventArgs e) => btnSendOneTelegram.Enabled = txtTelegramReq.TextLength > 0 && txtTelegramResExc.TextLength > 0;
         private void ajudaToolStripMenuItem_Click(object sender, EventArgs e) => showHelp();
+        private void btnRefresh_Click(object sender, EventArgs e) => loadCOMPorts();
 
         private void showHelp()
         {
@@ -200,6 +197,14 @@ namespace SerialReader
             MessageBox.Show(helpMessage, "Help", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        private void loadCOMPorts()
+        {
+            cmbPortName.DataSource = SerialPort.GetPortNames();
+            if (cmbPortName.Items.Count < 1)
+            {
+                cmbPortName.Text = "COM3";
+            }
+        }
     }
 
 }

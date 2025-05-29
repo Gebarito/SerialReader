@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "SerialReader\\Form1.cs",
               "ToolTip": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\Form1.cs",
               "RelativeToolTip": "SerialReader\\Form1.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAuwG4AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAQwJwAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T23:24:04.151Z",
               "IsPinned": true,
@@ -59,7 +59,8 @@
               "ToolTip": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\Form1.cs [Design]",
               "RelativeToolTip": "SerialReader\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T17:26:41.999Z"
+              "WhenOpened": "2025-05-15T17:26:41.999Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -83,7 +84,8 @@
               "RelativeToolTip": "SerialReader\\Form1.Designer.cs",
               "ViewState": "AgIAANcAAAAAAAAAAAAAAOkAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T23:25:48.808Z"
+              "WhenOpened": "2025-05-04T23:25:48.808Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

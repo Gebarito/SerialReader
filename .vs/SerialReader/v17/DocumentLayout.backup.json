@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "SerialReader\\Form1.cs",
               "ToolTip": "C:\\Users\\z00525su\\source\\repos\\Gebarito\\SerialReader\\SerialReader\\Form1.cs",
               "RelativeToolTip": "SerialReader\\Form1.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAG4AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAQwJwAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T23:24:04.151Z",
               "IsPinned": true,
@@ -72,8 +72,7 @@
               "RelativeToolTip": "SerialReader\\Telegram.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T16:47:40.141Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T16:47:40.141Z"
             },
             {
               "$type": "Document",
@@ -98,8 +97,7 @@
               "RelativeToolTip": "SerialReader\\SerialPortManager.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAAAIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T16:47:02.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T16:47:02.665Z"
             },
             {
               "$type": "Document",
@@ -111,8 +109,7 @@
               "RelativeToolTip": "SerialReader\\TelegramHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T16:47:53.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T16:47:53.216Z"
             }
           ]
         }

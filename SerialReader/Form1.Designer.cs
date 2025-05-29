@@ -48,6 +48,7 @@
             btnSendOneTelegram = new Button();
             lblParity = new Label();
             cmbParity = new ComboBox();
+            btnRefresh = new Button();
             MSForm1.SuspendLayout();
             SuspendLayout();
             // 
@@ -178,7 +179,7 @@
             cmbPortName.Location = new Point(977, 183);
             cmbPortName.Margin = new Padding(4, 5, 4, 5);
             cmbPortName.Name = "cmbPortName";
-            cmbPortName.Size = new Size(147, 33);
+            cmbPortName.Size = new Size(106, 33);
             cmbPortName.TabIndex = 8;
             // 
             // lblPortName
@@ -232,11 +233,22 @@
             cmbParity.Size = new Size(147, 33);
             cmbParity.TabIndex = 14;
             // 
+            // btnRefresh
+            // 
+            btnRefresh.Location = new Point(1085, 181);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new Size(36, 35);
+            btnRefresh.TabIndex = 15;
+            btnRefresh.Text = "R";
+            btnRefresh.UseVisualStyleBackColor = true;
+            btnRefresh.Click += btnRefresh_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1143, 750);
+            Controls.Add(btnRefresh);
             Controls.Add(cmbParity);
             Controls.Add(lblParity);
             Controls.Add(btnSendOneTelegram);
@@ -283,5 +295,6 @@
         private ToolStripMenuItem ajudaToolStripMenuItem;
         private Label lblParity;
         private ComboBox cmbParity;
+        private Button btnRefresh;
     }
 }
